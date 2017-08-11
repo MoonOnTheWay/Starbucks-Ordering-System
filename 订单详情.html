@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset ="utf-8">
+<meta name    ="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<link href="./css/food.css" rel='stylesheet' type='text/css' />
+<link rel="stylesheet" type="text/css" href="./css/test.css">
+<link rel="stylesheet" type="text/css" href="./css/popuo-box.css">
+<link href="./css/bootstrap.css" rel='stylesheet' type='text/css' />
+<script src="./js/jquery.min.js"></script>
+<script type="text/javascript" src="./js/easing.js"></script>
+<title>订单详情</title>
+<script type="text/javascript">
+    function changetoshouye1(obj) {  
+        obj.src = "./images/shouye1.png"; 
+    }  
+    function changetoshouye2(obj) {  
+        obj.src = "./images/shouye2.png";  
+    }  
+    function changetodingcan1(obj) {  
+        obj.src = "./images/dingcan1.png"; 
+    }  
+    function changetodingcan2(obj) {  
+        obj.src = "./images/dingcan2.png";  
+    }  
+    function changetogouwuche1(obj) {  
+        obj.src = "./images/gouwuche1.png"; 
+    }  
+    function changetogouwuche2(obj) {  
+        obj.src = "./images/gouwuche2.png";  
+    }  
+</script>   
+
+</head>
+
+<body style="font-family: 造字工房雅圆（非商用）">
+    <div class="container1">
+    <img class="logo2" src="./images/youshangjiao.png">
+
+<div class="left" style="height:650px;">
+    <img class="logo" src="./images/logo.png">
+    <br/>
+    <a href="个人信息.html" style="text-decoration:none"><div class="tuichu" style="height:50px">个人中心</div></a>
+
+    <a href="主页.html">
+    <img class="butt" src="./images/shouye1.png" id="shouye1" onMouseOver="changetoshouye2(this)" onMouseOut="changetoshouye1(this)">
+    </a>
+    <a href="美食.html">
+    <img class="butt" src="./images/dingcan1.png" id="dingcan1" onMouseOver="changetodingcan2(this)" onMouseOut="changetodingcan1(this)">
+    </a>
+    <a href="购物车.html">
+    <img class="butt" src="./images/gouwuche1.png" id="gouwuche1" onMouseOver="changetogouwuche2(this)" onMouseOut="changetogouwuche1(this)">
+    </a>
+</div>
+<img class="logo2" src="./images/youshangjiao.png">
+
+
+<img class="detail_pic" src="./images/menu_detail.png">
+<table id="table_1">
+    <tr>
+        <th>商品</th>
+        <th>单价</th>
+        <th>数量</th>
+        <th>小计</th>
+    </tr>
+    <tr>
+        <td>xxxxxxx</td>
+        <td>xx</td>
+        <td>x</td>
+        <td>小计</td>
+    </tr>
+    <tr>
+        <td>xxxxxxx</td>
+        <td>xx</td>
+        <td>x</td>
+        <td>小计</td>
+    </tr>
+    <tr>
+        <td>xxxxxxx</td>
+        <td>xx</td>
+        <td>x</td>
+        <td>小计</td>
+    </tr>
+    <tr>
+        <td>xxxxxxx</td>
+        <td>xx</td>
+        <td>x</td>
+        <td>小计</td>
+    </tr>
+    <tr>
+        <td>xxxxxxx</td>
+        <td>xx</td>
+        <td>x</td>
+        <td>小计</td>
+    </tr>
+    <tr>
+        <td>xxxxxxx</td>
+        <td>xx</td>
+        <td>x</td>
+        <td>小计</td>
+    </tr>
+
+</table>
+</div>
+
+<div class="personal_info">
+<div class="head_text">个人信息</div>
+<div class="left_text">地址：<span>xxxxxxxxx</span>
+<br/>手机：<span>xxx-xxx-xxxx</span></div>
+<div class="right_text">应付金额<span style="color:#007651"> ￥xx</span></div>
+
+    <a class="play-icon popup-with-zoom-anim" href="#pay-dialog"><img class="pay" src="./images/pay.png"></a>
+    <!---pop-up-box---->
+                    <script type="text/javascript" src="./js/modernizr.custom.min.js"></script>    
+                    <link href="./css/popuo-box.css" rel="stylesheet" type="text/css" media="all"/>
+                    <script src="./js/jquery.magnific-popup.js" type="text/javascript"></script>
+    <!---//pop-up-box---->
+    <div id="pay-dialog" class="mfp-hide">
+                        <div class="pay2">
+                            <img src="./images/paysuccess.png">
+
+                            <a href="主页.html"><input type="submit" value="返回首页"/></a>
+                        </div>
+     </div>
+     <script>
+                        $(document).ready(function() {
+                        $('.popup-with-zoom-anim').magnificPopup({
+                            type: 'inline',
+                            fixedContentPos: false,
+                            fixedBgPos: true,
+                            overflowY: 'auto',
+                            closeBtnInside: true,
+                            preloader: false,
+                            midClick: true,
+                            removalDelay: 300,
+                            mainClass: 'my-mfp-zoom-in'
+                        });
+                                                                                        
+                        });
+                </script>   
+</div>
+
+
+<div>
+    <img class="foot" src="./images/foot.jpg">
+</div>
+
+    </body>
+
+    </html>

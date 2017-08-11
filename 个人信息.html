@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset ="utf-8">
+<meta name    ="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<link href="./css/food.css" rel='stylesheet' type='text/css' />
+<link rel="stylesheet" type="text/css" href="./css/test.css">
+<title>个人信息</title>
+<script type="text/javascript">
+	function changetoshouye1(obj) {  
+        obj.src = "./images/shouye1.png"; 
+    }  
+    function changetoshouye2(obj) {  
+        obj.src = "./images/shouye2.png";  
+    }  
+	function changetodingcan1(obj) {  
+        obj.src = "./images/dingcan1.png"; 
+    }  
+    function changetodingcan2(obj) {  
+        obj.src = "./images/dingcan2.png";  
+    }  
+	function changetogouwuche1(obj) {  
+        obj.src = "./images/gouwuche1.png"; 
+    }  
+    function changetogouwuche2(obj) {  
+        obj.src = "./images/gouwuche2.png";  
+    }  
+</script>	
+
+<script type="text/javascript">
+	function confirm_info()
+	{
+		var con;
+		con=confirm("确认保存修改?");
+		if(con==true)
+			window.location.href='美食.html';
+		else
+			window.event;
+		return message;
+	}
+
+	function exit()
+	{
+		var exit;
+		exit=confirm("确定退出当前页面?");
+		if(exit==true)
+			window.location.href='美食.html';
+		else
+			window.event
+		return message;
+	}
+</script>
+</head>
+
+<body>
+	<div class="container1">
+	<img class="logo2" src="./images/youshangjiao.png">
+
+<div class="left" style="height:650px;">
+	<img class="logo" src="./images/logo.png">
+	<br/>
+	<a href="个人信息.html" style="text-decoration:none"><div class="tuichu">个人中心</div></a>
+
+	<a href="主页.html">
+	<img class="butt" src="./images/shouye1.png" id="shouye1" onMouseOver="changetoshouye2(this)" onMouseOut="changetoshouye1(this)">
+	</a>
+	<a href="美食.html">
+	<img class="butt" src="./images/dingcan1.png" id="dingcan1" onMouseOver="changetodingcan2(this)" onMouseOut="changetodingcan1(this)">
+	</a>
+	<a href="购物车.html">
+	<img class="butt" src="./images/gouwuche1.png" id="gouwuche1" onMouseOver="changetogouwuche2(this)" onMouseOut="changetogouwuche1(this)">
+	</a>
+</div>
+<img class="logo2" src="./images/youshangjiao.png">
+
+
+<img class="personal_info" src="./images/personal_info.png">
+
+<div class="info">
+
+
+
+<div class="right_row">
+<label>用户名</label>
+<input type="text">
+</div><br/><br/>
+
+<div class="right_row">
+<label>密码</label>
+<input type="password">
+</div><br/><br/>
+
+<div class="right_row">
+<label>电话</label>
+<input type="text">
+</div><br/><br/>
+
+<div class="right_row">
+<label>地址</label>
+<input type="text">
+</div>
+
+	<a href="">
+<img class="foot_left" src="./images/input_confirm.png" onclick="confirm_info()">
+	</a>
+	<a href="">
+<img class="foot_right" src="./images/input_cancel.png" onclick="exit()">
+	</a>
+</div>
+	</div>
+<div>
+	<img class="foot" src="./images/foot.jpg">
+</div>
+
+
+</body>
+
+
+</html>

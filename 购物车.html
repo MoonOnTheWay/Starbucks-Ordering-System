@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset ="utf-8">
+<meta name    ="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<link href="./css/gouwuche.css" rel='stylesheet' type='text/css' />
+
+<title>购物车</title>
+<script type="text/javascript">
+	function changetoshouye1(obj) {  
+        obj.src = "./images/shouye1.png"; 
+    }  
+    function changetoshouye2(obj) {  
+        obj.src = "./images/shouye2.png";  
+    }  
+	function changetodingcan1(obj) {  
+        obj.src = "./images/dingcan1.png"; 
+    }  
+    function changetodingcan2(obj) {  
+        obj.src = "./images/dingcan2.png";  
+    }  
+	function changetogouwuche1(obj) {  
+        obj.src = "./images/gouwuche1.png"; 
+    }  
+    function changetogouwuche2(obj) {  
+        obj.src = "./images/gouwuche2.png";  
+    }  
+</script>	
+<script src="./js/jquery.min.js"></script>
+
+<script type="text/javascript">
+
+/*商品数量+1*/
+function numAdd1(){
+ var num_add = parseInt($("#quantity1").val())+1;
+ if($("#quantity1").val()==""){
+  num_add = 1;
+ }
+ $("#quantity1").val(num_add);
+ var total = parseFloat($("#price").val())*parseInt($("#quantity1").val());
+ $("#totalPrice").html(total.toFixed(2));
+}
+/*商品数量-1*/
+function numDec1(){
+ var num_dec = parseInt($("#quantity1").val())-1;
+ if(num_dec<1){
+  //购买数量必须大于或等于1
+  alert("数量不得小于1");
+ }else{
+  $("#quantity1").val(num_dec);
+  var total = parseFloat($("#price").val())*parseInt($("#quantity1").val());
+  $("#totalPrice").html(total.toFixed(2));
+ }
+}
+
+function numAdd2(){
+ var num_add = parseInt($("#quantity2").val())+1;
+ if($("#quantity2").val()==""){
+  num_add = 1;
+ }
+ $("#quantity2").val(num_add);
+ var total = parseFloat($("#price").val())*parseInt($("#quantity2").val());
+ $("#totalPrice").html(total.toFixed(2));
+}
+/*商品数量-1*/
+function numDec2(){
+ var num_dec = parseInt($("#quantity2").val())-1;
+ if(num_dec<1){
+  //购买数量必须大于或等于1
+  alert("数量不得小于1");
+ }else{
+  $("#quantity2").val(num_dec);
+  var total = parseFloat($("#price").val())*parseInt($("#quantity2").val());
+  $("#totalPrice").html(total.toFixed(2));
+ }
+}
+</script>
+
+<script type="text/javascript">
+var flag=-1;
+function ck()
+{
+    var input = document.getElementsByTagName("input");
+
+    if(flag==-1)
+	{
+		for (var i=0;i<input.length ;i++ )
+		{
+			if(input[i].type=="checkbox")
+			input[i].checked = true;
+		}
+	}
+	else
+	{
+		for (var i=0;i<input.length ;i++ )
+		{
+			if(input[i].type=="checkbox")
+			input[i].checked = false;
+		}
+	}
+	flag=-flag;
+}
+</script>
+
+
+
+</head>
+
+<body>
+
+	<img class="logo2" src="./images/youshangjiao.png">
+
+<div class="left" style="height:650px;">
+	<img class="logo" src="./images/logo.png">
+	<a href="历史订单.html"><div class="history">查看历史订单</div></a>
+	<br/>
+	<a href="个人信息.html" style="text-decoration:none"><div class="tuichu">个人中心</div></a>
+
+	<a href="主页.html">
+	<img class="butt" src="./images/shouye1.png" id="shouye1" onMouseOver="changetoshouye2(this)" onMouseOut="changetoshouye1(this)">
+	</a>
+	<a href="美食.html">
+	<img class="butt" src="./images/dingcan1.png" id="dingcan1" onMouseOver="changetodingcan2(this)" onMouseOut="changetodingcan1(this)">
+	</a>
+	<a href="购物车.html">
+	<img class="butt" src="./images/gouwuche1.png" id="gouwuche1" onMouseOver="changetogouwuche2(this)" onMouseOut="changetogouwuche1(this)">
+	</a>
+</div>
+
+<img class="gouwuche" src="./images/mytrolleytitle.png">
+
+<table id="table3">
+
+	<tr>
+	<th><label><input name="goods" type="checkbox" value="" onclick="ck()">全选</label> </th>
+	<th>商品</th>
+	<th>单价（元）</th>
+	<th>备注</th>
+	<th>数量</th>
+	<th>小计（元）</th>
+	<th>操作</th>
+	</tr>
+	
+	<tr>
+		<td><label><input name="goods" type="checkbox" value=""><img class="food_img" src="./images/food1.jpg"></label></td>
+		<td>xxxxxxxxx</td>
+		<td>xx</td>
+		<td>xxxxxxxxx</td>
+		<td><img class="sign" src="./images/reduce.png" onclick="numDec1()">
+		<input type="text" id="quantity1">
+		<img class="sign" src="./images/plus.png" onclick="numAdd1()"></td>
+		<td>xx</td>
+		<td><a href=""><img src="./images/trash.png" class="trash"></a></td>
+	</tr>
+
+<tr>
+		<td><label><input name="goods" type="checkbox" value=""><img class="food_img" src="./images/food1.jpg"></label></td>
+		<td>xxxxxxxxx</td>
+		<td>xx</td>
+		<td>xxxxxxxxx</td>
+		<td><img class="sign" src="./images/reduce.png" onclick="numDec2()">
+		<input type="text" id="quantity2">
+		<img class="sign" src="./images/plus.png" onclick="numAdd2()"></td>
+		<td>xx</td>
+		<td><a href=""><img src="./images/trash.png" class="trash"></a></td>
+	</tr>
+
+<tr>
+		<td><label><input name="goods" type="checkbox" value=""><img class="food_img" src="./images/food1.jpg"></label></td>
+		<td>xxxxxxxxx</td>
+		<td>xx</td>
+		<td>xxxxxxxxx</td>
+		<td><img class="sign" src="./images/reduce.png" onclick="numDec()">
+		<input type="text" id="quantity1">
+		<img class="sign" src="./images/plus.png" onclick="numAdd()"></td>
+		<td>xx</td>
+		<td><a href=""><img src="./images/trash.png" class="trash"></a></td>
+	</tr>
+
+	
+</table>
+
+<div class="fanye">
+	<a href=""><img src="./images/pre.png"></a>
+第<span>1</span>页/<span>1</span>页
+	<a href=""><img src="./images/next.png"></a>
+</div>
+
+
+<div class="delete">
+	<label><input name="goods" type="checkbox" value="" onclick="ck()">全选</label>
+	<span class="text1">删除选中的商品</span>
+	<span class="text2">已选择<span>x</span>件</span>
+	<span class="text3">总价：<span>xx</span></span>
+</div>
+
+	<a href="订单详情.html"><img class="jiesuan" src="./images/gotoaccount.png"></a>
+
+<div>
+	<img class="foot" src="./images/foot.jpg">
+</div>
+
+
+</body>
+
+
+</html>

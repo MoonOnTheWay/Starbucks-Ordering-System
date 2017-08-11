@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset ="utf-8">
+<meta name    ="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+							
+<title>主页</title>
+
+<link href="./css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="./css/bootstrap(2).css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="./js/jquery.min.js"></script>
+<!-- Custom Theme filesf -->
+<link href="./css/style.css" rel='stylesheet' type='text/css' />
+<!-- Custom Theme files -->
+<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300' rel='stylesheet' type='text/css'>
+
+
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<script type="text/javascript" src="./js/move-top.js"></script>
+<script>
+      $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+            || location.hostname == this.hostname) {
+
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html,body').animate({
+                scrollTop: target.offset().top
+              }, 1000);
+              return false;
+            }
+          }
+        });
+      });
+    </script>
+<script type="text/javascript" src="./js/easing.js"></script>
+					
+<script type="text/javascript" src="./js/jquery.jscrollpane.min.js"></script>
+		<script type="text/javascript" id="sourcecode">
+			$(function()
+			{
+				$('.scroll-pane').jScrollPane();
+			});
+		</script>
+</head>
+
+<body style="font-family:造字工房朗倩（非商用）">
+
+	<div class="header">
+		<div class="container">
+			
+			<div class="menu">
+				<ul class="menu-top">
+					<li><a class="play-icon popup-with-zoom-anim" href="#small-dialog">登&nbsp;录</a></li>
+					<li><a class="play-icon popup-with-zoom-anim" href="#small-dialog1">注&nbsp;册</a></li>
+				</ul>	
+				<!---pop-up-box---->
+					  <script type="text/javascript" src="./js/modernizr.custom.min.js"></script>    
+					<link href="./css/popuo-box.css" rel="stylesheet" type="text/css" media="all"/>
+					<script src="./js/jquery.magnific-popup.js" type="text/javascript"></script>
+					<!---//pop-up-box---->
+				<div id="small-dialog" class="mfp-hide">
+						<div class="login">
+							<h3>登&nbsp;录</h3>
+							
+							<input name="" type="text" value="用户名" id="idtext1"/>
+							<input name="" type="text" style="display:none" id="idtext2" />
+
+							<input name="" type="text" value="密码" id="tx" /> 
+							<input name="" type="password" style="display:none" id="pwd" /> 
+							
+							<label><input type="radio" name="people"checked="checked" value="" />用户登录</label>&nbsp;&nbsp;
+							<label><input type="radio" name="people" value="" />管理员登录</label> 
+
+							<br/>
+							<input type="submit" id="in" value="登录" />
+						</div>
+					</div>
+					<div id="small-dialog1" class="mfp-hide">
+						<div class="signup">
+							<h3>用户注册</h3>
+							<h4>请输入个人信息</h4>
+
+							<input name="" type="text" value="用户名" id="idtext2_1" />
+							<input name="" type="text" style="display:none" id="idtext2_2" />
+							
+							<input name="" type="text" value="手机号" id="idtext2_3"/>
+							<input name="" type="text" style="display:none" id="idtext2_4" />
+
+							<input name="" type="text" value="密码" id="tx2_1" /> 
+							<input name="" type="password" style="display:none" id="pwd2_1" /> 
+
+							<input name="" type="text" value="确认密码" id="tx2_2" /> 
+							<input name="" type="password" style="display:none" id="pwd2_2" /> 
+
+							
+							<input type="submit" id="out" value="注册"/>
+						</div>
+					</div>	
+				 <script>
+						$(document).ready(function() {
+						$('.popup-with-zoom-anim').magnificPopup({
+							type: 'inline',
+							fixedContentPos: false,
+							fixedBgPos: true,
+							overflowY: 'auto',
+							closeBtnInside: true,
+							preloader: false,
+							midClick: true,
+							removalDelay: 300,
+							mainClass: 'my-mfp-zoom-in'
+						});
+																						
+						});
+				</script>					
+
+						<script type="text/javascript"> 
+						var it1 = document.getElementById("idtext1"), it2 = document.getElementById("idtext2"),it2_1=document.getElementById("idtext2_1"),it2_2=document.getElementById("idtext2_2"),it2_3=document.getElementById("idtext2_3"),it2_4=document.getElementById("idtext2_4"); 
+
+						it1.onfocus = function () 
+						{ 
+						if (this.value != "用户名") 
+						return; 
+						this.style.display = "none"; 
+						it2.style.display = ""; 
+						it2.value = ""; 
+						it2.focus(); 
+						} 
+						it2.onblur = function () 
+						{ 
+						if (this.value != "") 
+						return; 
+						this.style.display = "none"; 
+						it1.style.display = ""; 
+						it1.value = "用户名"; 
+						} 
+
+						it2_1.onfocus = function () 
+						{ 
+						if (this.value != "用户名") 
+						return; 
+						this.style.display = "none"; 
+						it2_2.style.display = ""; 
+						it2_2.value = ""; 
+						it2_2.focus(); 
+						} 
+						it2_2.onblur = function () 
+						{ 
+						if (this.value != "") 
+						return; 
+						this.style.display = "none"; 
+						it2_1.style.display = ""; 
+						it2_1.value = "用户名"; 
+						} 
+
+						it2_3.onfocus = function () 
+						{ 
+						if (this.value != "手机号") 
+						return; 
+						this.style.display = "none"; 
+						it2_4.style.display = ""; 
+						it2_4.value = ""; 
+						it2_4.focus(); 
+						} 
+						it2_4.onblur = function () 
+						{ 
+						if (this.value != "") 
+						return; 
+						this.style.display = "none"; 
+						it2_3.style.display = ""; 
+						it2_3.value = "手机号"; 
+						} 
+						</script> 
+						
+						<script type="text/javascript"> 
+						    var tx = document.getElementById("tx"), pwd = document.getElementById("pwd"),
+                            tx2_1 = document.getElementById("tx2_1"),
+							pwd2_1=document.getElementById("pwd2_1"),
+							tx2_2=document.getElementById("tx2_2"),
+							pwd2_2=document.getElementById("pwd2_2"); 
+						tx.onfocus = function () 
+						{ 
+						if (this.value != "密码") 
+						return; 
+						this.style.display = "none"; 
+						pwd.style.display = ""; 
+						pwd.value = ""; 
+						pwd.focus(); 
+						} 
+						pwd.onblur = function () 
+						{ 
+						if (this.value != "") 
+						return; 
+						this.style.display = "none"; 
+						tx.style.display = ""; 
+						tx.value = "密码"; 
+						} 
+
+						tx2_1.onfocus = function () 
+						{ 
+						if (this.value != "密码") 
+						return; 
+						this.style.display = "none"; 
+						pwd2_1.style.display = ""; 
+						pwd2_1.value = ""; 
+						pwd2_1.focus(); 
+						} 
+						pwd2_1.onblur = function () 
+						{ 
+						if (this.value != "") 
+						return; 
+						this.style.display = "none"; 
+						tx2_1.style.display = ""; 
+						tx2_1.value = "密码"; 
+						} 
+
+						tx2_2.onfocus = function () 
+						{ 
+						if (this.value != "确认密码") 
+						return; 
+						this.style.display = "none"; 
+						pwd2_2.style.display = ""; 
+						pwd2_2.value = ""; 
+						pwd2_2.focus(); 
+						} 
+						pwd2_2.onblur = function () 
+						{ 
+						if (this.value != "") 
+						return; 
+						this.style.display = "none"; 
+						tx2_2.style.display = ""; 
+						tx2_2.value = "确认密码"; 
+						} 
+
+
+						</script> 
+						
+						<script type="text/javascript"> 
+						var ss = document.getElementById("in"),
+						 it = document.getElementById("idtext2"),
+						 pwd = document.getElementById("pwd"),
+						 ss1 = document.getElementById("out"),
+                         it21 = document.getElementById("idtext2_1"),
+						 it2_1 = document.getElementById("idtext2_2"),
+                         it22 = document.getElementById("idtext2_3"),
+						 it2_2=document.getElementById("idtext2_4"),
+						 pwd2_1=document.getElementById("pwd2_1"),
+						 pwd2_2=document.getElementById("pwd2_2");
+
+						ss.onclick = function () 
+						{ 
+						
+							if(pwd.value =="")	
+							{
+								alert('密码未填写');
+							}
+							if(it.value  =="")
+							{
+								alert('用户名未填写');
+							}
+						}
+						
+
+						ss1.onclick = function () 
+						{ 
+							if(it2_1.value=="")
+								alert('用户名未填写');
+							else if(it2_2.value=="")
+								alert('手机号未填写');
+							else if(it2_2.value.length!=11)
+								alert('手机号输入有误');
+							else if (pwd2_1=="")
+								alert('密码不能为空');
+							else if(pwd2_1.value.length<6)
+								alert('密码长度过短，请输入至少六位密码');
+							else if(pwd2_2=="")
+								alert('请再次确认密码');
+						}
+
+						it21.onfocus = function () {
+						    if (this.value != "用户名")
+						        return;
+						    this.style.display = "none";
+						    it2_1.style.display = "";
+						    it2_1.value = "";
+						    it2_1.focus();
+						}
+						it2_1.onblur = function () {
+						    if (this.value != "")
+						        return;
+						    this.style.display = "none";
+						    it21.style.display = "";
+						    it21.value = "用户名";
+						}
+						it22.onfocus = function () {
+						    if (this.value != "手机号")
+						        return;
+						    this.style.display = "none";
+						    it2_2.style.display = "";
+						    it2_2.value = "";
+						    it2_2.focus();
+						}
+						it2_2.onblur = function () {
+						    if (this.value != "")
+						        return;
+						    this.style.display = "none";
+						    it22.style.display = "";
+						    it22.value = "手机号";
+						}
+						
+						</script>					
+
+			
+
+			<a href="#" class="right_bt" id="activator"><img src="./images/nav.png" alt=""/></a>
+				<div class="box" id="box">
+				   <div class="box_content_center">
+					   <div class="menu_box_list">
+								<ul>
+								
+								<li class="active"><a href="#culture" class="scroll">咖啡文化</a></li>
+								
+								<li><a href="#food"><i class="service-icon fa fa-home"></i>饮品美食</a></li>
+								
+							
+								</ul>
+						</div>
+					</div>
+						<a class="boxclose" id="boxclose"><img src="./images/close.png" alt=""/></a>
+					  </div>                
+					</div>
+					<script type="text/javascript" src="./js/easing.js"></script>
+					     <script type="text/javascript">
+								var $ = jQuery.noConflict();
+									$(function() {
+										$('#activator').click(function(){
+												$('#box').animate({'top':'0px'},500);
+										});
+										$('#boxclose').click(function(){
+												$('#box').animate({'top':'-700px'},500);
+										});
+									});
+									$(document).ready(function(){
+									
+									//Hide (Collapse) the toggle containers on load
+									$(".toggle_container").hide(); 
+									
+									//Switch the "Open" and "Close" state per click then slide up/down (depending on open/close state)
+									$(".trigger").click(function(){
+										$(this).toggleClass("active").next().slideToggle("slow");
+										return false; //Prevent the browser jump to the link anchor
+									});
+									
+									});
+								</script>
+								
+				</div> 
+				<div class="clearfix"></div>
+				<div class="header-bottom">
+					<a href="美食.html">在线点餐</a>
+				</div>
+				
+		</div>
+	
+	
+	<div class="aboutus" id="culture">
+		<img class="culture" src="./images/culture.jpg">
+	</div>
+	
+<div class="slider" id="food">
+		<div class="container">
+			<div class="slider-content">
+				<script src="./js/responsiveslides.min.js"></script>
+			 <script>
+			    // You can also use "$(window).load(function() {"
+			    $(function () {
+			      // Slideshow 4
+			      $("#slider4").responsiveSlides({
+			        auto: true,
+			        pager: true,
+			        nav: true,
+			        speed: 500,
+			        namespace: "callbacks",
+			        before: function () {
+			          $('.events').append("<li>before event fired.</li>");
+			        },
+			        after: function () {
+			          $('.events').append("<li>after event fired.</li>");
+			        }
+			      });
+			
+			    });
+			  </script>
+			<!----//End-slider-script---->
+			<!-- Slideshow 4 -->
+			    <div  id="top" class="callbacks_container">
+			      <ul class="rslides" id="slider4">
+			        <li>
+			          <div class="slider-top">
+			          	<img class="foods" src="./images/food1.jpg" alt=""/>
+			          	<p>"Si vous voulez mon avis concernant l'extremite observee, il est necessaire d'etudier la globalite des solutions de bon sens, parce que la nature a horreur ."</p>
+			          	<p class="below">-Salade de Banoui, Paris</p>
+			          </div>
+			        </li>
+			        <li>
+			          <div class="slider-top">
+			          <img class="foods" src="./images/food2.jpg" alt=""/>
+			          	<p class="second-slide">"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat."</p>
+			          	<p class="below">-Salade de Banoui, Paris</p>
+			          </div>
+			        </li>
+			        <li>
+			          <div class="slider-top">
+			          	<img class="foods" src="./images/food3.png" alt=""/>
+			          	<p>"Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto."</p>
+			          	<p class="below">-Salade de Banoui, Paris</p>
+			          </div>
+			        </li>
+			        <li>
+			          <div class="slider-top">
+			          	<img class="foods" src="./images/food4.png" alt=""/>
+			          	<p>"Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto."</p>
+			          	<p class="below">-Salade de Banoui, Paris</p>
+			          </div>
+			        </li>
+			      </ul>
+			    </div>
+			    <div class="clearfix"> </div>
+	  			
+		</div>
+	</div>
+</div>
+		
+		<div >
+			<img class="foot" src="./images/foot.jpg">	
+			<div class="clearfix"></div>
+		</div>
+		<script type="text/javascript">
+						$(document).ready(function() {
+							/*
+							var defaults = {
+					  			containerID: 'toTop', // fading element id
+								containerHoverID: 'toTopHover', // fading element hover id
+								scrollSpeed: 1200,
+								easingType: 'linear' 
+					 		};
+							*/
+							
+							$().UItoTop({ easingType: 'easeOutQuart' });
+							
+						});
+					</script>
+				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+
+<script type="text/javascript">
+	function click_scroll()
+	{
+		var scroll_offset=$("#pos").offset();
+		$("body,html").animate({
+			scrollTop:scroll_offset.top},1000);
+	}
+</script>
+
+</body>
+</html>

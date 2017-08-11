@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset ="utf-8">
+<meta name    ="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<script src="js/jquery-1.7.2.min.js"></script>
+<link href="./css/food.css" rel='stylesheet' type='text/css' />
+
+<script type="text/javascript">
+$(document).ready(function(){
+ 
+ $(".imgtext").hide();
+ $(".up_left").hover(function(){
+  $(".imgtext",this).slideToggle(500);
+ });
+ $(".up_right").hover(function(){
+  $(".imgtext",this).slideToggle(500);
+ });
+ $(".down_left").hover(function(){
+  $(".imgtext",this).slideToggle(500);
+ });
+ $(".down_right").hover(function(){
+  $(".imgtext",this).slideToggle(500);
+ });
+
+});
+
+</script>
+
+<script type="text/javascript">
+var flag1=-1,flag2=-1,flag3=-1,flag4=-1,flag1_2=-1,flag1_3=-1;
+	function showHideCode1()
+	{
+		if(flag2==1)
+		{
+			$("#showdiv2").toggle();
+			flag2=-flag2;
+		}
+		if(flag3==1)
+		{
+			$("#showdiv3").toggle();
+			flag3=-flag3;
+		}
+		if(flag4==1)
+		{
+			$("#showdiv4").toggle();
+			flag4=-flag4;
+		}
+		$("#showdiv1").toggle();
+		flag1=-flag1;
+	}
+	function showHideCode1_2()
+	{
+		if(flag1==1)
+		{
+			$("#showdiv1").toggle();
+			flag1=-flag1;
+		}
+		if(flag1_3==1)
+		{
+			$("#showdiv1_3").toggle();
+			flag1_3=-flag1_3;
+		}
+		$("#showdiv1_2").toggle();
+		flag1_2=-flag1_2;
+	}
+	function showHideCode1_3()
+	{
+		if(flag1==1)
+		{
+			$("#showdiv1").toggle();
+			flag1=-flag1;
+		}
+		if(flag1_2==1)
+		{
+			$("#showdiv1_2").toggle();
+			flag1_2=-flag1_2;
+		}
+		$("#showdiv1_3").toggle();
+		flag1_3=-flag1_3;
+	}
+	function showHideCode2()
+	{
+		if(flag1==1)
+		{
+			$("#showdiv1").toggle();
+			flag1=-flag1;
+		}
+		if(flag1_2==1)
+		{
+			$("#showdiv1_2").toggle();
+			flag1_2=-flag1_2;
+		}
+		if(flag1_3==1)
+		{
+			$("#showdiv1_3").toggle();
+			flag1_3=-flag1_3;
+		}
+		if(flag3==1)
+		{
+			$("#showdiv3").toggle();
+			flag3=-flag3;
+		}
+		if(flag4==1)
+		{
+			$("#showdiv4").toggle();
+			flag4=-flag4;
+		}
+		$("#showdiv2").toggle();
+		flag2=-flag2;
+	}
+	function showHideCode3()
+	{
+		if(flag1==1)
+		{
+			$("#showdiv1").toggle();
+			flag1=-flag1;
+		}
+		if(flag1_2==1)
+		{
+			$("#showdiv1_2").toggle();
+			flag1_2=-flag1_2;
+		}
+		if(flag1_3==1)
+		{
+			$("#showdiv1_3").toggle();
+			flag1_3=-flag1_3;
+		}
+		if(flag2==1)
+		{
+			$("#showdiv2").toggle();
+			flag2=-flag2;
+		}
+		if(flag4==1)
+		{
+			$("#showdiv4").toggle();
+			flag4=-flag4;
+		}
+		$("#showdiv3").toggle();
+		flag3=-flag3;
+	}
+	function showHideCode4()
+	{
+		if(flag1==1)
+		{
+			$("#showdiv1").toggle();
+			flag1=-flag1;
+		}
+		if(flag1_2==1)
+		{
+			$("#showdiv1_2").toggle();
+			flag1_2=-flag1_2;
+		}
+		if(flag1_3==1)
+		{
+			$("#showdiv1_3").toggle();
+			flag1_3=-flag1_3;
+		}
+		if(flag3==1)
+		{
+			$("#showdiv3").toggle();
+			flag3=-flag3;
+		}
+		if(flag2==1)
+		{
+			$("#showdiv2").toggle();
+			flag2=-flag2;
+		}	
+		$("#showdiv4").toggle();
+		flag4=-flag4;
+	}
+</script>
+
+<script type="text/javascript" src="./js/move-top.js"></script>
+<script>
+      $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+            || location.hostname == this.hostname) {
+
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html,body').animate({
+                scrollTop: target.offset().top
+              }, 1000);
+              return false;
+            }
+          }
+        });
+      });
+    </script>		
+
+    <script type="text/javascript" src="./js/easing.js"></script>
+					
+<script type="text/javascript" src="./js/jquery.jscrollpane.min.js"></script>
+		<script type="text/javascript" id="sourcecode">
+			$(function()
+			{
+				$('.scroll-pane').jScrollPane();
+			});
+		</script>
+
+    <script type="text/javascript">
+	function changetoshouye1(obj) {  
+        obj.src = "./images/shouye1.png"; 
+    }  
+    function changetoshouye2(obj) {  
+        obj.src = "./images/shouye2.png";  
+    }  
+	function changetodingcan1(obj) {  
+        obj.src = "./images/dingcan1.png"; 
+    }  
+    function changetodingcan2(obj) {  
+        obj.src = "./images/dingcan2.png";  
+    }  
+	function changetogouwuche1(obj) {  
+        obj.src = "./images/gouwuche1.png"; 
+    }  
+    function changetogouwuche2(obj) {  
+        obj.src = "./images/gouwuche2.png";  
+    }  
+</script>								
+<title>美食</title>
+</head>
+
+<body>
+
+<img class="logo2" src="./images/youshangjiao.png">
+
+<div class="left" style="height:650px;">
+	<img class="logo" src="./images/logo.png">
+	<br/>
+	<a href="个人信息.html" style="text-decoration:none"><div class="tuichu">个人中心</div></a>
+
+	<a href="主页.html">
+	<img class="butt" src="./images/shouye1.png" id="shouye1" onMouseOver="changetoshouye2(this)" onMouseOut="changetoshouye1(this)">
+	</a>
+	<a href="#" >
+	<img class="butt" src="./images/dingcan1.png" id="dingcan1" onMouseOver="changetodingcan2(this)" onMouseOut="changetodingcan1(this)">
+	</a>
+	<a href="购物车.html">
+	<img class="butt" src="./images/gouwuche1.png" id="gouwuche1" onMouseOver="changetogouwuche2(this)" onMouseOut="changetogouwuche1(this)">
+	</a>
+</div>
+
+<div class="search">
+	<input type="text" class="text" />
+	<a href="美食搜索.html" target="_blank" ><img class="button" src="./images/search.jpg"></a>
+</div>
+
+
+
+<div>
+<div class="up_left" >
+	<a href="#showdiv1" class="scroll" onclick="showHideCode1()"><img class="pic" src="./images/kafei.png"></a>
+    <div class="text1">
+    	<div class="imgtext">星巴克咖啡的不同之处，更多地体现在我们为使每一颗咖啡豆具有最佳口味而花费的心血上。</div>
+    </div>
+</div>
+
+<div id="showdiv1" class="coffees" style="display:none;">
+	<div class="sort">
+		<a href="#showdiv1_2" class="scroll" onclick="showHideCode1_2()"><img src="./images/saledownwhite.png"></a>
+		<a href="#showdiv1_3" class="scroll" onclick="showHideCode1_3()"><img src="./images/priceupwhite.png"></a>
+	</div>
+
+	<div class="c">
+	<a href="商品详情.html"><img class="coffee" src="./images/coffee1.jpg"></a><br/>
+	<span class="coffee_text1">美式咖啡</span><br/><span class ="coffee_text2">Caffee Americano
+	<br/>￥26</span><br/><span class="coffee_text3" >热门指数</span> <br/>
+	<a href=""><img class="gouwuche" src="./images/jiarugouwuche.png"></a> </div>
+	
+	<div class="c">
+	<a href="商品详情.html"><img class="coffee" src="./images/coffee1.jpg"></a><br/>
+	<span class="coffee_text1">美式咖啡</span><br/><span class ="coffee_text2">Caffee Americano
+	<br/>￥26</span><br/><span class="coffee_text3" >热门指数</span> <br/><a href=""><img class="gouwuche" src="./images/jiarugouwuche.png"></a> </div>
+
+	<div class="c">
+	<a href="商品详情.html"><img class="coffee" src="./images/coffee1.jpg"></a><br/>
+	<span class="coffee_text1">美式咖啡</span><br/><span class ="coffee_text2">Caffee Americano
+	<br/>￥26</span><br/><span class="coffee_text3" >热门指数</span> <br/><a href=""><img class="gouwuche" src="./images/jiarugouwuche.png"></a> </div>
+
+	<div class="c">
+	<a href="商品详情.html"><img class="coffee" src="./images/coffee1.jpg"></a><br/>
+	<span class="coffee_text1">美式咖啡</span><br/><span class ="coffee_text2">Caffee Americano
+	<br/>￥26</span><br/><span class="coffee_text3" >热门指数</span> <br/><a href=""><img class="gouwuche" src="./images/jiarugouwuche.png"></a> </div>
+
+	<div class="c">
+	<a href="商品详情.html"><img class="coffee" src="./images/coffee1.jpg"></a><br/>
+	<span class="coffee_text1">美式咖啡</span><br/><span class ="coffee_text2">Caffee Americano
+	<br/>￥26</span><br/><span class="coffee_text3" >热门指数</span> <br/><a href=""><img class="gouwuche" src="./images/jiarugouwuche.png"></a> </div>
+
+	<div class="c">
+	<a href="商品详情.html"><img class="coffee" src="./images/coffee1.jpg"></a><br/>
+	<span class="coffee_text1">美式咖啡</span><br/><span class ="coffee_text2">Caffee Americano
+	<br/>￥26</span><br/><span class="coffee_text3" >热门指数</span> <br/><a href=""><img class="gouwuche" src="./images/jiarugouwuche.png"></a> </div>
+
+	<div class="c">
+	<a href="商品详情.html"><img class="coffee" src="./images/coffee1.jpg"></a><br/>
+	<span class="coffee_text1">美式咖啡</span><br/><span class ="coffee_text2">Caffee Americano
+	<br/>￥26</span><br/><span class="coffee_text3" >热门指数</span> <br/><a href=""><img class="gouwuche" src="./images/jiarugouwuche.png"></a> </div>
+
+	<div class="c">
+	<a href="商品详情.html"><img class="coffee" src="./images/coffee1.jpg"></a><br/>
+	<span class="coffee_text1">美式咖啡</span><br/><span class ="coffee_text2">Caffee Americano
+	<br/>￥26</span><br/><span class="coffee_text3" >热门指数</span> <br/><a href=""><img class="gouwuche" src="./images/jiarugouwuche.png"></a> </div>
+
+</div>
+
+<div id="showdiv1_2" class="coffees" style="display:none;">
+	<div class="sort">
+		<img src="./images/saledown.png">
+		<a href="#showdiv1_3" class="scroll" onclick="showHideCode1_3()"><img src="./images/priceupwhite.png"></a>
+	</div>
+
+	<div class="c">
+	<a href="商品详情.html"><img class="coffee" src="./images/coffee1.jpg"></a><br/>
+	<span class="coffee_text1">美式咖啡</span><br/><span class ="coffee_text2">Caffee Americano
+	<br/>￥26</span><br/><span class="coffee_text3" >热门指数</span> <br/>
+	<a href=""><img class="gouwuche" src="./images/jiarugouwuche.png"></a> </div>
+	
+	<div class="c">
+	<a href="商品详情.html"><img class="coffee" src="./images/coffee1.jpg"></a><br/>
+	<span class="coffee_text1">美式咖啡</span><br/><span class ="coffee_text2">Caffee Americano
+	<br/>￥26</span><br/><span class="coffee_text3" >热门指数</span> <br/><a href=""><img class="gouwuche" src="./images/jiarugouwuche.png"></a> </div>
+
+	<div class="c">
+	<a href="商品详情.html"><img class="coffee" src="./images/coffee1.jpg"></a><br/>
+	<span class="coffee_text1">美式咖啡</span><br/><span class ="coffee_text2">Caffee Americano
+	<br/>￥26</span><br/><span class="coffee_text3" >热门指数</span> <br/><a href=""><img class="gouwuche" src="./images/jiarugouwuche.png"></a> </div>
+
+	<div class="c">
+	<a href="商品详情.html"><img class="coffee" src="./images/coffee1.jpg"></a><br/>
+	<span class="coffee_text1">美式咖啡</span><br/><span class ="coffee_text2">Caffee Americano
+	<br/>￥26</span><br/><span class="coffee_text3" >热门指数</span> <br/><a href=""><img class="gouwuche" src="./images/jiarugouwuche.png"></a> </div>
+
+	<div class="c">
+	<a href="商品详情.html"><img class="coffee" src="./images/coffee1.jpg"></a><br/>
+	<span class="coffee_text1">美式咖啡</span><br/><span class ="coffee_text2">Caffee Americano
+	<br/>￥26</span><br/><span class="coffee_text3" >热门指数</span> <br/><a href=""><img class="gouwuche" src="./images/jiarugouwuche.png"></a> </div>
+
+	<div class="c">
+	<a href="商品详情.html"><img class="coffee" src="./images/coffee1.jpg"></a><br/>
+	<span class="coffee_text1">美式咖啡</span><br/><span class ="coffee_text2">Caffee Americano
+	<br/>￥26</span><br/><span class="coffee_text3" >热门指数</span> <br/><a href=""><img class="gouwuche" src="./images/jiarugouwuche.png"></a> </div>
+
+	<div class="c">
+	<a href="商品详情.html"><img class="coffee" src="./images/coffee1.jpg"></a><br/>
+	<span class="coffee_text1">美式咖啡</span><br/><span class ="coffee_text2">Caffee Americano
+	<br/>￥26</span><br/><span class="coffee_text3" >热门指数</span> <br/><a href=""><img class="gouwuche" src="./images/jiarugouwuche.png"></a> </div>
+
+	<div class="c">
+	<a href="商品详情.html"><img class="coffee" src="./images/coffee1.jpg"></a><br/>
+	<span class="coffee_text1">美式咖啡</span><br/><span class ="coffee_text2">Caffee Americano
+	<br/>￥26</span><br/><span class="coffee_text3" >热门指数</span> <br/><a href=""><img class="gouwuche" src="./images/jiarugouwuche.png"></a> </div>
+
+</div>
+
+<div id="showdiv1_3" class="coffees" style="display:none;">
+	<div class="sort">
+		<a href="#showdiv1_2" class="scroll" onclick="showHideCode1_2()"><img src="./images/saledownwhite.png"></a>
+		<img src="./images/priceup.png">
+	</div>
+
+	<div class="c">
+	<a href="商品详情.html"><img class="coffee" src="./images/coffee1.jpg"></a><br/>
+	<span class="coffee_text1">美式咖啡</span><br/><span class ="coffee_text2">Caffee Americano
+	<br/>￥26</span><br/><span class="coffee_text3" >热门指数</span> <br/>
+	<a href=""><img class="gouwuche" src="./images/jiarugouwuche.png"></a> </div>
+	
+	<div class="c">
+	<a href="商品详情.html"><img class="coffee" src="./images/coffee1.jpg"></a><br/>
+	<span class="coffee_text1">美式咖啡</span><br/><span class ="coffee_text2">Caffee Americano
+	<br/>￥26</span><br/><span class="coffee_text3" >热门指数</span> <br/><a href=""><img class="gouwuche" src="./images/jiarugouwuche.png"></a> </div>
+
+	<div class="c">
+	<a href="商品详情.html"><img class="coffee" src="./images/coffee1.jpg"></a><br/>
+	<span class="coffee_text1">美式咖啡</span><br/><span class ="coffee_text2">Caffee Americano
+	<br/>￥26</span><br/><span class="coffee_text3" >热门指数</span> <br/><a href=""><img class="gouwuche" src="./images/jiarugouwuche.png"></a> </div>
+
+	<div class="c">
+	<a href="商品详情.html"><img class="coffee" src="./images/coffee1.jpg"></a><br/>
+	<span class="coffee_text1">美式咖啡</span><br/><span class ="coffee_text2">Caffee Americano
+	<br/>￥26</span><br/><span class="coffee_text3" >热门指数</span> <br/><a href=""><img class="gouwuche" src="./images/jiarugouwuche.png"></a> </div>
+
+	<div class="c">
+	<a href="商品详情.html"><img class="coffee" src="./images/coffee1.jpg"></a><br/>
+	<span class="coffee_text1">美式咖啡</span><br/><span class ="coffee_text2">Caffee Americano
+	<br/>￥26</span><br/><span class="coffee_text3" >热门指数</span> <br/><a href=""><img class="gouwuche" src="./images/jiarugouwuche.png"></a> </div>
+
+	<div class="c">
+	<a href="商品详情.html"><img class="coffee" src="./images/coffee1.jpg"></a><br/>
+	<span class="coffee_text1">美式咖啡</span><br/><span class ="coffee_text2">Caffee Americano
+	<br/>￥26</span><br/><span class="coffee_text3" >热门指数</span> <br/><a href=""><img class="gouwuche" src="./images/jiarugouwuche.png"></a> </div>
+
+	<div class="c">
+	<a href="商品详情.html"><img class="coffee" src="./images/coffee1.jpg"></a><br/>
+	<span class="coffee_text1">美式咖啡</span><br/><span class ="coffee_text2">Caffee Americano
+	<br/>￥26</span><br/><span class="coffee_text3" >热门指数</span> <br/><a href=""><img class="gouwuche" src="./images/jiarugouwuche.png"></a> </div>
+
+	<div class="c">
+	<a href="商品详情.html"><img class="coffee" src="./images/coffee1.jpg"></a><br/>
+	<span class="coffee_text1">美式咖啡</span><br/><span class ="coffee_text2">Caffee Americano
+	<br/>￥26</span><br/><span class="coffee_text3" >热门指数</span> <br/><a href=""><img class="gouwuche" src="./images/jiarugouwuche.png"></a> </div>
+
+</div>
+</div>
+
+
+
+<div>
+<div class="up_right" >
+	<a href="#showdiv2" class="scroll" onclick="showHideCode2()"><img class="pic" src="./images/tiandian.png"></a>
+    <div class="text1">
+    	<div class="imgtext"> 经典地道的法式甜点，果味馥郁的香橙麦芬与清新可口的椰香绵绵蛋糕，给你一个清甜果香的夏日午后。</div>
+    </div>
+</div>
+
+<div id="showdiv2" class="desserts" style="display:none;">
+	
+	<div class="c">
+	<img class="coffee" src="./images/dessert1.jpg"><br/>
+	<span class="coffee_text1">蓝莓丹麦酥</span><br/><span class ="coffee_text2">Blueberry Danish
+	<br/>￥26</span><br/><span class="coffee_text3" >热门指数</span> <br/><a href=""><img class="gouwuche" src="./images/jiarugouwuche.png"></a> </div>
+	
+	<div class="c">
+	<img class="coffee" src="./images/dessert1.jpg"><br/>
+	<span class="coffee_text1">蓝莓丹麦酥</span><br/><span class ="coffee_text2">Blueberry Danish
+	<br/>￥26</span><br/><span class="coffee_text3" >热门指数</span> <br/><a href=""><img class="gouwuche" src="./images/jiarugouwuche.png"></a> </div>
+
+	<div class="c">
+	<img class="coffee" src="./images/dessert1.jpg"><br/>
+	<span class="coffee_text1">蓝莓丹麦酥</span><br/><span class ="coffee_text2">Blueberry Danish
+	<br/>￥26</span><br/><span class="coffee_text3" >热门指数</span> <br/><a href=""><img class="gouwuche" src="./images/jiarugouwuche.png"></a> </div>
+
+	<div class="c">
+	<img class="coffee" src="./images/dessert1.jpg"><br/>
+	<span class="coffee_text1">蓝莓丹麦酥</span><br/><span class ="coffee_text2">Blueberry Danish
+	<br/>￥26</span><br/><span class="coffee_text3" >热门指数</span> <br/><a href=""><img class="gouwuche" src="./images/jiarugouwuche.png"></a> </div>
+
+	<div class="c">
+	<img class="coffee" src="./images/dessert1.jpg"><br/>
+	<span class="coffee_text1">蓝莓丹麦酥</span><br/><span class ="coffee_text2">Blueberry Danish
+	<br/>￥26</span><br/><span class="coffee_text3" >热门指数</span> <br/><a href=""><img class="gouwuche" src="./images/jiarugouwuche.png"></a> </div>
+
+	<div class="c">
+	<img class="coffee" src="./images/dessert1.jpg"><br/>
+	<span class="coffee_text1">蓝莓丹麦酥</span><br/><span class ="coffee_text2">Blueberry Danish
+	<br/>￥26</span><br/><span class="coffee_text3" >热门指数</span> <br/><a href=""><img class="gouwuche" src="./images/jiarugouwuche.png"></a> </div>
+
+	<div class="c">
+	<img class="coffee" src="./images/dessert1.jpg"><br/>
+	<span class="coffee_text1">蓝莓丹麦酥</span><br/><span class ="coffee_text2">Blueberry Danish
+	<br/>￥26</span><br/><span class="coffee_text3" >热门指数</span> <br/><a href=""><img class="gouwuche" src="./images/jiarugouwuche.png"></a> </div>
+
+	<div class="c">
+	<img class="coffee" src="./images/dessert1.jpg"><br/>
+	<span class="coffee_text1">蓝莓丹麦酥</span><br/><span class ="coffee_text2">Blueberry Danish
+	<br/>￥26</span><br/><span class="coffee_text3" >热门指数</span> <br/><a href=""><img class="gouwuche" src="./images/jiarugouwuche.png"></a> </div>
+
+</div>
+</div>
+
+
+<div>
+<div class="down_left" >
+	<a href="#showdiv3" class="scroll" onclick="showHideCode3()"><img class="pic" src="./images/chalei.png"></a>
+    <div class="text1">
+    	<div class="imgtext"> 我们的伯爵红茶的茶味和涩味与香柠檬的淡淡的香料味、柠檬味以及薰衣草的花香味完美平衡。</div>
+    </div>
+</div>
+
+<div id="showdiv3" class="teas" style="display:none;">
+	
+	<div class="c">
+	<img class="coffee" src="./images/tea1.jpg"><br/>
+	<span class="coffee_text1">伯爵红茶</span><br/><span class ="coffee_text2">Earl Grey Tea
+	<br/>￥26</span><br/><span class="coffee_text3" >热门指数</span> <br/><a href=""><img class="gouwuche" src="./images/jiarugouwuche.png"></a> </div>
+	
+	<div class="c">
+	<img class="coffee" src="./images/tea1.jpg"><br/>
+	<span class="coffee_text1">伯爵红茶</span><br/><span class ="coffee_text2">Earl Grey Tea
+	<br/>￥26</span><br/><span class="coffee_text3" >热门指数</span> <br/><a href=""><img class="gouwuche" src="./images/jiarugouwuche.png"></a> </div>
+
+	<div class="c">
+	<img class="coffee" src="./images/tea1.jpg"><br/>
+	<span class="coffee_text1">伯爵红茶</span><br/><span class ="coffee_text2">Earl Grey Tea
+	<br/>￥26</span><br/><span class="coffee_text3" >热门指数</span> <br/><a href=""><img class="gouwuche" src="./images/jiarugouwuche.png"></a> </div>
+
+	<div class="c">
+	<img class="coffee" src="./images/tea1.jpg"><br/>
+	<span class="coffee_text1">伯爵红茶</span><br/><span class ="coffee_text2">Earl Grey Tea
+	<br/>￥26</span><br/><span class="coffee_text3" >热门指数</span> <br/><a href=""><img class="gouwuche" src="./images/jiarugouwuche.png"></a> </div>
+
+	<div class="c">
+	<img class="coffee" src="./images/tea1.jpg"><br/>
+	<span class="coffee_text1">伯爵红茶</span><br/><span class ="coffee_text2">Earl Grey Tea
+	<br/>￥26</span><br/><span class="coffee_text3" >热门指数</span> <br/><a href=""><img class="gouwuche" src="./images/jiarugouwuche.png"></a> </div>
+
+	<div class="c">
+	<img class="coffee" src="./images/tea1.jpg"><br/>
+	<span class="coffee_text1">伯爵红茶</span><br/><span class ="coffee_text2">Earl Grey Tea
+	<br/>￥26</span><br/><span class="coffee_text3" >热门指数</span> <br/><a href=""><img class="gouwuche" src="./images/jiarugouwuche.png"></a> </div>
+
+	<div class="c">
+	<img class="coffee" src="./images/tea1.jpg"><br/>
+	<span class="coffee_text1">伯爵红茶</span><br/><span class ="coffee_text2">Earl Grey Tea
+	<br/>￥26</span><br/><span class="coffee_text3" >热门指数</span> <br/><a href=""><img class="gouwuche" src="./images/jiarugouwuche.png"></a> </div>
+
+	<div class="c">
+	<img class="coffee" src="./images/tea1.jpg"><br/>
+	<span class="coffee_text1">伯爵红茶</span><br/><span class ="coffee_text2">Earl Grey Tea
+	<br/>￥26</span><br/><span class="coffee_text3" >热门指数</span> <br/><a href=""><img class="gouwuche" src="./images/jiarugouwuche.png"></a> </div>
+
+</div>
+</div>
+
+<div>
+<div class="down_right" >
+	<a href="#showdiv4" class="scroll" onclick="showHideCode4()"><img class="pic" src="./images/bingsha.png"></a>
+    <div class="text1">
+    	<div class="imgtext">全新推出的摩卡星冰乐，将这酥脆与摩卡酱融合，搭配着蜂蜜风味糖浆，让这个夏天怀旧而又不失趣味。</div>
+    </div>
+</div>
+
+<div id="showdiv4" class="icecreams" style="display:none;">
+	
+	<div class="c">
+	<img class="coffee" src="./images/icecream1.jpg"><br/>
+	<span class="coffee_text1">芒果西番莲果茶星冰乐</span><br/><span class ="coffee_text2">Mango Passion Fruit Frappuccino
+	<br/>￥26</span><br/><span class="coffee_text3" >热门指数</span> <br/><a href=""><img class="gouwuche" src="./images/jiarugouwuche.png"></a> </div>
+	
+	<div class="c">
+	<img class="coffee" src="./images/icecream1.jpg"><br/>
+	<span class="coffee_text1">芒果西番莲果茶星冰乐</span><br/><span class ="coffee_text2">Mango Passion Fruit Frappuccino
+	<br/>￥26</span><br/><span class="coffee_text3" >热门指数</span> <br/><a href=""><img class="gouwuche" src="./images/jiarugouwuche.png"></a> </div>
+
+	<div class="c">
+	<img class="coffee" src="./images/icecream1.jpg"><br/>
+	<span class="coffee_text1">芒果西番莲果茶星冰乐</span><br/><span class ="coffee_text2">Mango Passion Fruit Frappuccino
+	<br/>￥26</span><br/><span class="coffee_text3" >热门指数</span> <br/><a href=""><img class="gouwuche" src="./images/jiarugouwuche.png"></a> </div>
+
+	<div class="c">
+	<img class="coffee" src="./images/icecream1.jpg"><br/>
+	<span class="coffee_text1">芒果西番莲果茶星冰乐</span><br/><span class ="coffee_text2">Mango Passion Fruit Frappuccino
+	<br/>￥26</span><br/><span class="coffee_text3" >热门指数</span> <br/><a href=""><img class="gouwuche" src="./images/jiarugouwuche.png"></a> </div>
+
+	<div class="c">
+	<img class="coffee" src="./images/icecream1.jpg"><br/>
+	<span class="coffee_text1">芒果西番莲果茶星冰乐</span><br/><span class ="coffee_text2">Mango Passion Fruit Frappuccino
+	<br/>￥26</span><br/><span class="coffee_text3" >热门指数</span> <br/><a href=""><img class="gouwuche" src="./images/jiarugouwuche.png"></a> </div>
+
+	<div class="c">
+	<img class="coffee" src="./images/icecream1.jpg"><br/>
+	<span class="coffee_text1">芒果西番莲果茶星冰乐</span><br/><span class ="coffee_text2">Mango Passion Fruit Frappuccino
+	<br/>￥26</span><br/><span class="coffee_text3" >热门指数</span> <br/><a href=""><img class="gouwuche" src="./images/jiarugouwuche.png"></a> </div>
+
+	<div class="c">
+	<img class="coffee" src="./images/icecream1.jpg"><br/>
+	<span class="coffee_text1">芒果西番莲果茶星冰乐</span><br/><span class ="coffee_text2">Mango Passion Fruit Frappuccino
+	<br/>￥26</span><br/><span class="coffee_text3" >热门指数</span> <br/><a href=""><img class="gouwuche" src="./images/jiarugouwuche.png"></a> </div>
+
+	<div class="c">
+	<img class="coffee" src="./images/icecream1.jpg"><br/>
+	<span class="coffee_text1">芒果西番莲果茶星冰乐</span><br/><span class ="coffee_text2">Mango Passion Fruit Frappuccino
+	<br/>￥26</span><br/><span class="coffee_text3" >热门指数</span> <br/><a href=""><img class="gouwuche" src="./images/jiarugouwuche.png"></a> </div>
+
+</div>
+</div>
+
+
+<script type="text/javascript">
+						$(document).ready(function() {
+							
+							$().UItoTop({ easingType: 'easeOutQuart' });
+							
+						});
+</script>
+<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>		
+
+<div>
+
+	<img class="foot" src="./images/foot.jpg">
+</div>
+
+</body>

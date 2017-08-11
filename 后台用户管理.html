@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset ="utf-8">
+<meta name    ="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<link href="./css/admin.css" rel='stylesheet' type='text/css' />
+<title>后台用户管理</title>
+ <script type="text/javascript">
+ var flag=-1;
+	function changeto_adminmanage1(obj) {  
+        obj.src = "./images/adminmanage_brown.png"; 
+    }  
+    function changeto_adminmanage2(obj) {  
+        obj.src = "./images/adminmanage_green.png";  
+    }  
+	function changeto_menuinput1(obj) {  
+        obj.src = "./images/menuinput_brown.png"; 
+    }  
+    function changeto_menuinput2(obj) {  
+        obj.src = "./images/menuinput_green.png";  
+    }  
+	function changeto_menumanage1(obj) {  
+        obj.src = "./images/menumanage_brown.png"; 
+    }  
+    function changeto_menumanage2(obj) {  
+        obj.src = "./images/menumanage_green.png";  
+    }  
+   function changeto_menu1(obj) {  
+        obj.src = "./images/menu_brown.png"; 
+    }  
+    function changeto_menu2(obj) {  
+        obj.src = "./images/menu_green.png";  
+    }  
+   
+    function modify_to_confirm(obj)
+    {
+
+        if(flag==-1) 
+        {
+        alert('确定进行修改？')
+        var a=document.getElementById("edit1");
+        a.readOnly=false;
+        var b=document.getElementById("edit2");
+        b.readOnly=false;
+        var c=document.getElementById("edit3");
+        c.readOnly=false;
+        obj.src = "./images/confirm.png"; 
+        }
+
+        else if(flag==1)
+        {
+            alert('确定保存修改？')
+            var a=document.getElementById("edit1");
+            a.readOnly=true;
+            var b=document.getElementById("edit2");
+            b.readOnly=true;
+            var c=document.getElementById("edit3");
+            c.readOnly=true;
+            obj.src = "./images/modify.png"; 
+         }   
+        flag=-flag;
+    }  
+       
+</script>		
+
+<script type="text/javascript">
+     function delete()
+    {
+        alert('确定删除本条记录？')
+        var table1=document.getElementByIdx_x('table1');
+        table1.deleteRow(o.parentNode.rowIndex);
+
+    }  
+</script>
+								
+</head>
+
+<body>
+<div class="left" style="height:700px;">
+	<img class="logo3" src="./images/logo3.png">
+	<br/>
+	<span>Admin,欢迎</span><br/><br/>
+	<a href="后台订单管理.html">
+	<img class="left_img" src="./images/menu_brown.png" id="menu1" onmouseOver="changeto_menu2(this)" onMouseOut="changeto_menu1(this)">
+	</a>
+	<a href="后台用户管理.html">
+	<img class="left_img" src="./images/adminmanage_brown.png" id="adminmanage1" onmouseOver="changeto_adminmanage2(this)" onMouseOut="changeto_adminmanage1(this)">
+	</a>
+	<a href="后台菜单录入.html" >
+	<img class="left_img" src="./images/menuinput_brown.png" id="menuinput1" onMouseOver="changeto_menuinput2(this)" onMouseOut="changeto_menuinput1(this)">
+	</a>
+	<a href="后台菜单管理.html">
+	<img class="left_img" src="./images/menumanage_brown.png" id="menumanage1" onMouseOver="changeto_menumanage2(this)" onMouseOut="changeto_menumanage1(this)">
+	</a>
+</div>
+
+<img class="rightimg" src="./images/rightimg1.png">
+
+
+<table id="table1">
+
+<tr>
+<th>用户名</th>
+<th>电话</th>
+<th>地址</th>
+<th>管理操作</th>
+</tr>
+
+<tr>
+<td><a href=""><img class="addnewuser" src="./images/addnewuser.png"></a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td><input id="edit1" class="input" type="text" value="用户名" readonly></td>
+<td><input id="edit2" class="input" type="text" value="******" readonly></td>
+<td><input id="edit3" class="input" type="text" value="******" readonly></td>
+<td>
+<img  class="table_img" src="./images/modify.png" onclick="modify_to_confirm(this)">
+<img  class="table_img" src="./images/delete.png" onclick="
+delete(this)"></td>
+</tr>
+
+<tr>
+<td><input id="edit1" class="input" type="text" value="用户名" readonly></td>
+<td><input id="edit2" class="input" type="text" value="******" readonly></td>
+<td><input id="edit3" class="input" type="text" value="******" readonly></td>
+<td>
+<img  class="table_img" src="./images/modify.png" onclick="modify_to_confirm(this)">
+<img  class="table_img" src="./images/delete.png" onclick="
+delete(this)"></td>
+</tr>
+
+<tr>
+<td><input id="edit1" class="input" type="text" value="用户名" readonly></td>
+<td><input id="edit2" class="input" type="text" value="******" readonly></td>
+<td><input id="edit3" class="input" type="text" value="******" readonly></td>
+<td>
+<img  class="table_img" src="./images/modify.png" onclick="modify_to_confirm(this)">
+<img  class="table_img" src="./images/delete.png" onclick="
+delete(this)"></td>
+</tr>
+
+<tr>
+<td>用户名</td>
+<td>*****</td>
+<td>*****</td>
+<td><img class="table_img" src="./images/modify.png">
+<img class="table_img" src="./images/delete.png"></td>
+</tr>
+
+<tr>
+<td>用户名</td>
+<td>*****</td>
+<td>*****</td>
+<td><img class="table_img" src="./images/modify.png">
+<img class="table_img" src="./images/delete.png"></td>
+</tr>
+
+<tr>
+<td>用户名</td>
+<td>*****</td>
+<td>*****</td>
+<td><img class="table_img" src="./images/modify.png">
+<img class="table_img" src="./images/delete.png"></td>
+</tr>
+
+<tr>
+<td>用户名</td>
+<td>*****</td>
+<td>*****</td>
+<td><img class="table_img" src="./images/modify.png">
+<img class="table_img" src="./images/delete.png"></td>
+</tr>
+
+<tr>
+<td>用户名</td>
+<td>*****</td>
+<td>*****</td>
+<td><img class="table_img" src="./images/modify.png">
+<img class="table_img" src="./images/delete.png"></td>
+</tr>
+
+<tr>
+<td>用户名</td>
+<td>*****</td>
+<td>*****</td>
+<td><img class="table_img" src="./images/modify.png">
+<img class="table_img" src="./images/delete.png"></td>
+</tr>
+
+<tr>
+<td>用户名</td>
+<td>*****</td>
+<td>*****</td>
+<td><img class="table_img" src="./images/modify.png">
+<img class="table_img" src="./images/delete.png"></td>
+</tr>
+</table>
+
+</body>
+
+    </html>

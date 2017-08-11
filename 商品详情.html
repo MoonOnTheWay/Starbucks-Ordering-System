@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset ="utf-8">
+<meta name    ="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<link href="./css/food.css" rel='stylesheet' type='text/css' />
+<link rel="stylesheet" type="text/css" href="./css/test.css">
+<link rel="stylesheet" type="text/css" href="./css/popuo-box.css">
+<link href="./css/bootstrap.css" rel='stylesheet' type='text/css' />
+<script src="./js/jquery.min.js"></script>
+<script type="text/javascript" src="./js/easing.js"></script>
+<title>商品详情</title>
+
+
+
+<script type="text/javascript">
+	function changetoshouye1(obj) {  
+        obj.src = "./images/shouye1.png"; 
+    }  
+    function changetoshouye2(obj) {  
+        obj.src = "./images/shouye2.png";  
+    }  
+	function changetodingcan1(obj) {  
+        obj.src = "./images/dingcan1.png"; 
+    }  
+    function changetodingcan2(obj) {  
+        obj.src = "./images/dingcan2.png";  
+    }  
+	function changetogouwuche1(obj) {  
+        obj.src = "./images/gouwuche1.png"; 
+    }  
+    function changetogouwuche2(obj) {  
+        obj.src = "./images/gouwuche2.png";  
+    }  
+</script>		
+
+<script type="text/javascript">
+$(function(){
+ $("#quantity").keyup(function(){
+  if(isNaN($(this).val()) || parseInt($(this).val())<1){
+   $(this).val("1");
+   $("#totalPrice").html($("#price").val());
+   return;
+  }
+  var total = parseFloat($("#price").val())*parseInt($(this).val());
+  $("#totalPrice").html(total.toFixed(2));
+ })
+
+})
+/*商品数量+1*/
+function numAdd(){
+ var num_add = parseInt($("#quantity").val())+1;
+ if($("#quantity").val()==""){
+  num_add = 1;
+ }
+ $("#quantity").val(num_add);
+ var total = parseFloat($("#price").val())*parseInt($("#quantity").val());
+ $("#totalPrice").html(total.toFixed(2));
+}
+/*商品数量-1*/
+function numDec(){
+ var num_dec = parseInt($("#quantity").val())-1;
+ if(num_dec<1){
+  //购买数量必须大于或等于1
+  alert("数量不得小于1");
+ }else{
+  $("#quantity").val(num_dec);
+  var total = parseFloat($("#price").val())*parseInt($("#quantity").val());
+  $("#totalPrice").html(total.toFixed(2));
+ }
+}
+</script>
+
+<script type="text/javascript">
+	function changecolor(id)
+	{
+		if(id.style.backgroundColor=="white")
+			id.style.backgroundColor="green";
+		else
+			id.style.backgroundColor="white";
+	}
+
+	function changeborder(id)
+	{
+		
+			id.style.backgroundColor="green";
+		
+	}
+</script>
+
+
+
+
+				
+
+</head>
+
+<body style="font-family: 造字工房雅圆（非商用）">
+
+<div class="container1">
+	<img class="logo2" src="./images/右上角装饰.png">
+
+<div class="left" style="height:650px;">
+	<img class="logo" src="./images/logo.png">
+	<br/>
+	<a href="个人信息.html" style="text-decoration:none"><div class="tuichu" style="height:50px">个人中心</div></a>
+
+	<a href="主页.html">
+	<img class="butt" src="./images/shouye1.png" id="shouye1" onMouseOver="changetoshouye2(this)" onMouseOut="changetoshouye1(this)">
+	</a>
+	<a href="美食.html">
+	<img class="butt" src="./images/dingcan1.png" id="dingcan1" onMouseOver="changetodingcan2(this)" onMouseOut="changetodingcan1(this)">
+	</a>
+	<a href="购物车.html">
+	<img class="butt" src="./images/gouwuche1.png" id="gouwuche1" onMouseOver="changetogouwuche2(this)" onMouseOut="changetogouwuche1(this)">
+	</a>
+</div>
+<img class="logo2" src="./images/youshangjiao.png">
+
+<div class="head">
+<a href="美食.html">订餐</a>/<a href="javascript:history.back()">咖啡</a>/焦糖玛奇朵
+</div>
+
+<div class="detail">
+	<img class="left_pic" src="./images/coffee1.jpg">
+	<span class="coffee_text1">焦糖玛奇朵</span><br/><span class ="coffee_text2">Caffee Americano
+	<br/>￥26</span><br/><span class="coffee_text3" >热门指数</span> <br/><br/>
+	<p>这是星巴克的独创饮品，在蒸奶中加入浓缩咖啡和香草糖浆,然后覆盖上一层风格独特的焦糖图案，口味香甜，像丝般顺滑，风味醇厚。</p>
+
+	<a class="play-icon popup-with-zoom-anim" href="#gouwu-dialog"><img class="right_pic" src="./images/jiarugouwuche.png"></a>
+	<!---pop-up-box---->
+					<script type="text/javascript" src="./js/modernizr.custom.min.js"></script>    
+					<link href="./css/popuo-box.css" rel="stylesheet" type="text/css" media="all"/>
+					<script src="./js/jquery.magnific-popup.js" type="text/javascript"></script>
+	<!---//pop-up-box---->
+					
+					<div id="gouwu-dialog" class="mfp-hide">
+						<div class="gouwuche">
+							<img class="gouwuche_img" src="./images/coffee1.jpg">
+							<div class="gouwuche_right">
+							焦糖玛奇朵<br/>Caramel Macchiato<br/>￥32<br/>
+							<a class="gouwuche_box" onclick="changecolor(this)">加糖</a>
+							<a class="gouwuche_box" onclick="changecolor(this)">加奶</a>
+							<a class="gouwuche_box" onclick="changecolor(this)">加冰</a>
+							<br/>
+							<img class="gouwuche_cup" src="./images/xiaobei.png">
+							<img class="gouwuche_cup" src="./images/zhongbei.png">
+							<img class="gouwuche_cup" src="./images/dabei.png">
+							<img class="gouwuche_cup" src="./images/chaodabei.png">
+							<br/>
+							
+							<p>购买数量：<span onclick="numDec()"><img src="./images/reduce.png" style="width:15px"></span> <input type="text" id="quantity" /> <span onclick="numAdd()"><img src="./images/plus.png" style="width:15px"></span></p>
+							
+							</div>
+
+							<input type="submit" value="确认"/>
+						</div>
+					</div>
+ 				<script>
+						$(document).ready(function() {
+						$('.popup-with-zoom-anim').magnificPopup({
+							type: 'inline',
+							fixedContentPos: false,
+							fixedBgPos: true,
+							overflowY: 'auto',
+							closeBtnInside: true,
+							preloader: false,
+							midClick: true,
+							removalDelay: 300,
+							mainClass: 'my-mfp-zoom-in'
+						});
+																						
+						});
+				</script>		
+</div>
+
+<div class="know">
+您知道吗？
+<p>“Macchiato”一词源于意大利，意为“印记”。浓缩咖啡倾倒入热奶时将穿过奶泡层，在牛奶中留下只属这款饮料的独特印记。</p>	
+</div>
+
+<div class="green">很多人都是我们这款明星产品的粉丝。他们着迷的程度会让人以为这是一种魔幻琼浆。好了，这里可没有忽悠人的魔术。让我们告诉你其中的秘诀：香草风味的糖浆，新鲜蒸奶及天鹅绒般质感的丝滑奶泡，加上一份香醇的浓缩咖啡，再撒上一层焦糖酱，就是这些。听起来的确像魔术。（尝起来味道比想像中更棒！）</div>
+
+
+
+
+
+
+
+</div>
+
+<div>
+	<img class="foot" src="./images/foot.jpg">
+</div>
+
+</body>
+
+
+
+</html>

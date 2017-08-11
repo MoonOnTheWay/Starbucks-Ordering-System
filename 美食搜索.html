@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset ="utf-8">
+<meta name    ="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<script src="js/jquery-1.7.2.min.js"></script>
+<link href="./css/food.css" rel='stylesheet' type='text/css' />
+
+
+<script type="text/javascript" src="./js/move-top.js"></script>
+<script>
+      $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+            || location.hostname == this.hostname) {
+
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html,body').animate({
+                scrollTop: target.offset().top
+              }, 1000);
+              return false;
+            }
+          }
+        });
+      });
+    </script>		
+
+    <script type="text/javascript" src="./js/easing.js"></script>
+					
+<script type="text/javascript" src="./js/jquery.jscrollpane.min.js"></script>
+		<script type="text/javascript" id="sourcecode">
+			$(function()
+			{
+				$('.scroll-pane').jScrollPane();
+			});
+		</script>
+
+    <script type="text/javascript">
+	function changetoshouye1(obj) {  
+        obj.src = "./images/shouye1.png"; 
+    }  
+    function changetoshouye2(obj) {  
+        obj.src = "./images/shouye2.png";  
+    }  
+	function changetodingcan1(obj) {  
+        obj.src = "./images/dingcan1.png"; 
+    }  
+    function changetodingcan2(obj) {  
+        obj.src = "./images/dingcan2.png";  
+    }  
+	function changetogouwuche1(obj) {  
+        obj.src = "./images/gouwuche1.png"; 
+    }  
+    function changetogouwuche2(obj) {  
+        obj.src = "./images/gouwuche2.png";  
+    }  
+</script>								
+<title>美食搜索</title>
+</head>
+
+<body>
+
+<img class="logo2" src="./images/youshangjiao.png">
+
+<div class="left" style="height:950px;">
+
+	<img class="logo" src="./images/logo.png">
+	<br/>
+	<a href="个人信息.html" style="text-decoration:none"><div class="tuichu">个人中心</div></a>
+
+	<a href="主页.html">
+	<img class="butt" src="./images/shouye1.png" id="shouye1" onMouseOver="changetoshouye2(this)" onMouseOut="changetoshouye1(this)">
+	</a>
+	<a href="美食.html" >
+	<img class="butt" src="./images/dingcan1.png" id="dingcan1" onMouseOver="changetodingcan2(this)" onMouseOut="changetodingcan1(this)">
+	</a>
+	<a href="购物车.html">
+	<img class="butt" src="./images/gouwuche1.png" id="gouwuche1" onMouseOver="changetogouwuche2(this)" onMouseOut="changetogouwuche1(this)">
+	</a>
+</div>
+
+<div class="search">
+	<input type="text" class="text" />
+	<a href="#" target="_blank" ><img class="button" src="./images/search.jpg"></a>
+</div>
+
+
+<div class="search_result">
+	
+	<div class="c_1">
+	<a href="商品详情.html"><img class="coffee" src="./images/coffee1.jpg"></a><br/>
+	<span class="coffee_text1">美式咖啡</span><br/><span class ="coffee_text2">Caffee Americano
+	<br/>￥26</span><br/><span class="coffee_text3" >热门指数</span> <br/>
+	 </div>
+	
+	<div class="c_1">
+	<a href="商品详情.html"><img class="coffee" src="./images/coffee1.jpg"></a><br/>
+	<span class="coffee_text1">美式咖啡</span><br/><span class ="coffee_text2">Caffee Americano
+	<br/>￥26</span><br/><span class="coffee_text3" >热门指数</span> <br/> </div>
+
+	<div class="c_1">
+	<a href="商品详情.html"><img class="coffee" src="./images/coffee1.jpg"></a><br/>
+	<span class="coffee_text1">美式咖啡</span><br/><span class ="coffee_text2">Caffee Americano
+	<br/>￥26</span><br/><span class="coffee_text3" >热门指数</span> <br/> </div>
+
+	<div class="c_1">
+	<a href="商品详情.html"><img class="coffee" src="./images/coffee1.jpg"></a><br/>
+	<span class="coffee_text1">美式咖啡</span><br/><span class ="coffee_text2">Caffee Americano
+	<br/>￥26</span><br/><span class="coffee_text3" >热门指数</span> <br/> </div>
+
+	<div class="c_1">
+	<a href="商品详情.html"><img class="coffee" src="./images/coffee1.jpg"></a><br/>
+	<span class="coffee_text1">美式咖啡</span><br/><span class ="coffee_text2">Caffee Americano
+	<br/>￥26</span><br/><span class="coffee_text3" >热门指数</span> <br/>
+	</div>
+
+	<div class="c_1">
+	<a href="商品详情.html"><img class="coffee" src="./images/coffee1.jpg"></a><br/>
+	<span class="coffee_text1">美式咖啡</span><br/><span class ="coffee_text2">Caffee Americano
+	<br/>￥26</span><br/><span class="coffee_text3" >热门指数</span> <br/> </div>
+
+	<div class="c_1">
+	<a href="商品详情.html"><img class="coffee" src="./images/coffee1.jpg"></a><br/>
+	<span class="coffee_text1">美式咖啡</span><br/><span class ="coffee_text2">Caffee Americano
+	<br/>￥26</span><br/><span class="coffee_text3" >热门指数</span> <br/> </div>
+
+	<div class="c_1">
+	<a href="商品详情.html"><img class="coffee" src="./images/coffee1.jpg"></a><br/>
+	<span class="coffee_text1">美式咖啡</span><br/><span class ="coffee_text2">Caffee Americano
+	<br/>￥26</span><br/><span class="coffee_text3" >热门指数</span> <br/> </div>
+
+	
+
+</div>
+	
+
+
+
+<script type="text/javascript">
+						$(document).ready(function() {
+							
+							$().UItoTop({ easingType: 'easeOutQuart' });
+							
+						});
+</script>
+<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>		
+
+<div>
+
+	<img class="foot" src="./images/foot.jpg">
+</div>
+
+</body>

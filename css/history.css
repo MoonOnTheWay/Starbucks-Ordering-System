@@ -1,0 +1,201 @@
+body{
+	font-family: 造字工房雅圆（非商用）;
+}
+
+
+.left
+{
+	font-family: 造字工房朗倩（非商用）;
+	font-size: 1.1em;
+	top:0;
+	left: 0;
+	width: 20%;
+	height: 100%;
+}
+
+.logo
+{
+	margin-top: 20px;
+	margin-bottom: 15px;
+	margin-left: 40px;
+	margin-right: 10px;
+	width: 150px;
+}
+
+.logo2
+{
+	position: absolute;
+	top:0;
+	left: 80%;
+}
+
+.butt
+{
+	width: 150px;
+	margin-top: 10px;
+	margin-bottom: 8px;
+	margin-left: 40px;
+	margin-right: 10px;
+}
+
+.tuichu
+{
+	background: url(../images/yonghuming.png) no-repeat 0px 0px;
+	height: 40px;
+	width: 150px;
+	padding-top: 10px;
+	margin-top: 10px;
+	margin-bottom: 8px;
+	margin-left: 40px;
+	margin-right: 10px;
+	text-align: center;
+	font-size: 1.3em;
+	font-weight: bold;
+	color: black;
+	text-decoration: none;
+}
+
+
+.gouwuche
+{
+	position: absolute;
+	left: 20%;
+	top:6%;
+	width: 150px;
+
+}
+
+.history
+{
+	position: absolute;
+	left: 33%;
+	top:7.5%;
+	width: 200px;
+	color: #007651;
+	font-size: 1.1em;
+}
+#table3
+{
+	position: absolute;
+	left: 20%;
+	top:22%;
+	width: 70%;
+	border-collapse: collapse;
+	border-left: none;
+	border-right: none;
+	border-top: 1px solid #e5e5e5;
+	border-bottom: 1px solid #e5e5e5;
+	border: 1px solid #e5e5e5;
+	color: black;
+	font-size: 0.9em;
+	text-align: center;
+}
+
+#table3 td
+{
+	width: 80px;
+	height: 90px;
+	font-size:1em;
+	border-top: 1px solid #e5e5e5;
+	border-bottom: 1px solid #e5e5e5;
+	padding:3px 7px 2px 7px;
+	background-color: white;
+}
+
+#table3 th
+{
+	height: 30px;
+	font-size:1.0em;
+	
+	padding:3px 7px 2px 7px;
+	background-color: #e5e5e5;
+}
+
+
+
+#table3 input[type="text"]
+{
+	width: 30px;
+}
+
+.food_img
+{
+	height: 80%;
+	margin-left: 20px;
+	float: left;
+}
+
+
+
+
+.sign
+{
+	width: 12px;
+
+}
+
+.fanye
+{
+	position: absolute;
+	left: 80%;
+	width: 13%;
+	top:80%;
+	font-size: 0.9em;
+
+}
+
+.fanye img
+{
+	width: 30px;
+}
+
+.delete
+{
+	position: absolute;
+	padding-top: 10px;
+	left: 20%;
+	top:87%;
+	width: 65%;
+	height: 30px;
+	border: 1px solid #e5e5e5;
+	color: black;
+	font-size: 0.8em;
+	
+}
+
+.jiesuan
+{
+	position: absolute;
+	left: 82%;
+	top:87%;
+	width: 8%;
+	height: 41px;
+}
+.text1
+{
+	margin-top: 2px;
+	position: absolute;
+	float: left;
+	left: 10%;
+}
+
+.text2
+{
+	float: right;
+	position: absolute;
+	left: 73%;
+}
+
+.text3
+{
+	float: right;
+	position: absolute;
+	left: 87%;
+}
+
+.foot
+{
+	width: 100%;
+	height: 100%;
+	background-position: center;
+}

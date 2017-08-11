@@ -1,0 +1,251 @@
+body{
+	font-family: 造字工房朗倩（非商用）;
+}
+
+.container1
+{
+	width: 700px;
+	min-height: 500px;
+}
+
+.head
+{
+	position: absolute;
+	left: 25%;
+	top:6%;
+	width: 300px;
+	height: 20px;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+.head a
+{
+	text-decoration: none;
+	color: #007651;
+}
+
+.detail
+{
+	position: absolute;
+	left: 25%;
+	top:15%;
+	width: 50%;
+	height: 43%;	
+}
+
+.left_pic
+{
+	float: left;
+	width: 33%;
+	height: 100%;
+	margin-right: 30px;
+}
+
+.personal_info
+{
+	position: absolute;
+	left: 25%;
+	top:7%;
+	width: 200px;
+	height: 35px;
+}
+
+.detail_pic
+{
+	position: absolute;
+	left: 25%;
+	top:7%;
+	width: 120px;
+	height: 30px;
+}
+
+.info
+{
+	position: absolute;
+	margin-top: 20px;
+	left: 25%;
+	top:15%;
+	height:500px;
+	width: 800px;
+	font-size: 1.3em;
+	color:  #afafaf;
+	font-weight: bold;
+	background: url(../images/food_back.png);
+}
+
+
+.right_row
+{
+	position: absolute;
+	margin-top: 20px;
+	left: 30%;
+	height:20%; 
+	width: 300px;
+}
+
+.right_row label
+{
+	position: absolute;
+	width: 80px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.right_row input[type="text"],input[type="password"]
+{
+	position: absolute;
+	left: 30%;
+	width: 230px;
+	height: 25px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	border: 2px solid #afafaf;
+}
+
+.right_pic
+{
+	position: absolute;
+	bottom: 0;
+	width: 86px;
+	height: 35px;
+}
+
+.know
+{
+	position: absolute;
+	background:  url(../images/food_back.png);
+	margin-top: 10px;
+	padding-top: 15px;
+	padding-left: 10px;
+	left: 25%;
+	top:62%;
+	width: 50%;
+	height: 17%;
+	font-size: 1.5em;
+	font-weight: bold;
+	color:  #007651;
+	float: left;
+}
+
+
+.know p
+{
+	font-size: 0.7em;
+	color: black;
+}
+
+.green
+{
+	position: absolute;
+	left: 25%;
+	top:83.5%;
+	width: 50%;
+	height: 18%;
+	font-size: 1.0em;
+	color:  #007651;
+	float: left;
+}
+
+.foot_left
+{
+	width: 75px;
+	height: 40px;
+	position: absolute;
+	left: 35%;
+	top:75%;
+}
+
+.foot_right
+{
+	width: 75px;
+	height: 40px;
+	position: absolute;
+	left: 56%;
+	top:75%;
+}
+
+#table_1
+{
+	position: absolute;
+	left: 25%;
+	top:20%;
+	width: 45%;
+	border-collapse: collapse;
+	border-left: none;
+	border-right: none;
+	border-top: none;
+	border-bottom: none;
+	border: 1px solid #e5e5e5;
+	color: #808080;
+	text-align: center;
+}
+
+#table_1 td
+{
+	width: 80px;
+	height: 25px;
+	font-size:1em;
+	text-align: center;
+	padding:3px 7px 2px 7px;
+	background-color: white;
+}
+
+#table_1 th
+{
+	height: 35px;
+	font-size:1em;
+	text-align: center;
+	padding:3px 7px 2px 7px;
+	background-color: #e5e5e5;
+}
+
+.personal_info
+{
+	position: absolute;
+	left: 25%;
+	top:64%;
+	width: 45%;
+	height: 200px;
+	border: 1px solid #e5e5e5;
+	color: #808080;
+}
+
+.head_text
+{
+	position: absolute;
+	left: 0;
+	top:0;
+	width: 100%;
+	height: 35px;
+	background-color: #e5e5e5;
+	color: #007651;
+	font-size: 1.1em;
+	text-align: center;
+	padding-top: 5px;
+}
+
+.left_text
+{
+	position: absolute;
+	top:30%;
+	float: left;
+	margin-left: 30px;
+}
+
+.right_text
+{
+	position: absolute;
+	top: 85%;
+	height: 10%;
+	left: 60%;
+	font-size:1.2em;
+}
+
+.pay
+{
+	position: absolute;
+	top: 82%;
+	height: 16%;
+	left: 85%;
+}

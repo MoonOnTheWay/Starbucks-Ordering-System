@@ -5,22 +5,22 @@
 ### Website Screenshots
 ![image text](https://github.com/MoonOnTheWay/Starbucks-Ordering-System/blob/master/screenshots/1.png)
 
-![image text](https://github.com/MoonOnTheWay/Starbucks-Ordering-System/tree/master/screenshots/2.png)
+![image text](https://github.com/MoonOnTheWay/Starbucks-Ordering-System/blob/master/screenshots/2.png)
 
-![image text](https://github.com/MoonOnTheWay/Starbucks-Ordering-System/tree/master/screenshots/3.png)
+![image text](https://github.com/MoonOnTheWay/Starbucks-Ordering-System/blob/master/screenshots/3.png)
 
-![image text](https://github.com/MoonOnTheWay/Starbucks-Ordering-System/tree/master/screenshots/4.png)
+![image text](https://github.com/MoonOnTheWay/Starbucks-Ordering-System/blob/master/screenshots/4.png)
 
-![image text](https://github.com/MoonOnTheWay/Starbucks-Ordering-System/tree/master/screenshots/5.png)
+![image text](https://github.com/MoonOnTheWay/Starbucks-Ordering-System/blob/master/screenshots/5.png)
 
-![image text](https://github.com/MoonOnTheWay/Starbucks-Ordering-System/tree/master/screenshots/6.png)
+![image text](https://github.com/MoonOnTheWay/Starbucks-Ordering-System/blob/master/screenshots/6.png)
 
-![image text](https://github.com/MoonOnTheWay/Starbucks-Ordering-System/tree/master/screenshots/7.png)
+![image text](https://github.com/MoonOnTheWay/Starbucks-Ordering-System/blob/master/screenshots/7.png)
 
-![image text](https://github.com/MoonOnTheWay/Starbucks-Ordering-System/tree/master/screenshots/8.png)
+![image text](https://github.com/MoonOnTheWay/Starbucks-Ordering-System/blob/master/screenshots/8.png)
 
-![image text](https://github.com/MoonOnTheWay/Starbucks-Ordering-System/tree/master/screenshots/9.png)
+![image text](https://github.com/MoonOnTheWay/Starbucks-Ordering-System/blob/master/screenshots/9.png)
 
-![image text](https://github.com/MoonOnTheWay/Starbucks-Ordering-System/tree/master/screenshots/10.png)
+![image text](https://github.com/MoonOnTheWay/Starbucks-Ordering-System/blob/master/screenshots/10.png)
 
 

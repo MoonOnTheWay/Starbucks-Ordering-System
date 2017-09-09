@@ -3,7 +3,7 @@
 * Designed and developed a cafe website using Bootstrap, HTML/CSS, and JS
 * Provided user management, menu management and order management services.
 ### Website Screenshots
-![image text](https://github.com/MoonOnTheWay/Starbucks-Ordering-System/tree/master/screenshots/1.png)
+![image text](https://github.com/MoonOnTheWay/Starbucks-Ordering-System/blob/master/screenshots/1.png)
 
 ![image text](https://github.com/MoonOnTheWay/Starbucks-Ordering-System/tree/master/screenshots/2.png)
 

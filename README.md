@@ -1,9 +1,10 @@
 # Starbucks Ordering Platform Development 
-### UI Designer and Front End Developer (7/2015 - 8/2015)
-* Designed and developed a cafe website using Bootstrap, HTML/CSS, and JS
-* Consulted and documented UI best practices and code standards.
-* Tested front-end code in multiple browsers to ensure cross-browser compatibility
-* Provided online ordering, user management, menu management and order management services
+### Full Stack Developer (7/2015 - 8/2015)
+* Designed and developed a cafe ordering website with functionalities of managing customers, menus and orders
+* Built front-end by JavaScript and Bootstrap, interacting with the server using jQuery
+* Used AJAX to make asynchronous request to server for JSON data and jQuery for smooth scroll functionality
+* Optimized front-end for cross-browser compatibility and enhanced to prevent injection and XSS
+* Validated input through front-end to back-end and developed Spring MVC back-end using Java and MySQL
 
 ### Website Screenshots
 ![image text](https://github.com/MoonOnTheWay/Starbucks-Ordering-System/blob/master/screenshots/1.png)
